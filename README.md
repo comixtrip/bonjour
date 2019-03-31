@@ -55,6 +55,14 @@ Options are:
 - `protocol` (string, optional) - `udp` or `tcp` (default)
 - `txt` (object, optional) - a key/value object to broadcast as the TXT
   record
+  
+Debug options:
+- `allowedLoopbackDevices` (boolean, optional) - enable listening on loopback devices
+  Default: `false`.
+- `listenOnlyOnHost` (boolean, optional) - listen only on configured `host` option.
+  This helps if you're additionally running consumer on localhost.
+  Default: `false`
+
 
 IANA maintains a [list of official service types and port
 numbers](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml).
